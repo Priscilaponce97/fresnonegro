@@ -1,0 +1,105 @@
+<!DOCTYPE html><!-- comentariosss -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresno Negro</title>
+    <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Indie+Flower&family=Josefin+Slab:wght@600&family=Playfair+Display+SC:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <haeder>
+        <nav class="header__nav">
+            <img class="header__logo" src="../recursos/favicon.ico.sl" alt="logo fresno negro">
+            <ul class="nav__ul">
+                <li class="header__li"> <a href="../index.html">INICIO</a></li>
+                <li class="header__li"> <a href="productos.html">PRODUCTOS</a></li>
+                <li class="header__li"> <a href="compra.html">COMPRA</a></li>
+                <li class="header__li"> <a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="header__li"> <a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </haeder>
+    <main>
+        <h1> ¿Como Comprar?</h1>
+        <section class="main__compra">
+            <article>
+                <img class="img__compra" src="../recursos/IMG-6964.JPG" alt="pasos de compra">
+            </article>
+            <article>
+            <h2 class="h2__compra">Pedi tu presupuesto (cliente particular)</h2>
+        <form method="post" class="form__formularios">
+                <label> Femenino </label>
+                    <input type="radio" name="sexo" value="fem"/>
+                <label>Masculino</label>
+                    <input type="radio" name="sexo" value="masc"/>
+                <label>Prefiero no aclararlo</label>
+                    <input type="radio" name="sexo" value="pref_no_decir">
+            <div>
+                <label for="nombre_apellido"> Nombre y Apellido </label>
+                    <input type="text" name="nombre_apellido">
+            </div>
+            <div>
+                <label for="telefono_de_contacto"> Telefono </label>
+                    <input type="text" name="telefono_de_contacto">
+            </div>
+            <div>
+                <select name="tipo_muebles" class="form__lista--compra">
+                    <option value="muebles_cocina">Muebles de Cocina</option>
+                    <option value="muebles_baño">Muebles de Baño</option>
+                    <option value="muebles_dormitorio">Muebles de Dormitorio</option>
+                    <option value="muebles_sala">Muebles de Sala/Living</option>
+                    <option value="otro">Otro</option>
+                <label for="tipo_mueble">Nombre de mueble</label>
+                    <input type="text" name="tipo_mueble"
+            </div>
+            <div>
+                <label for="alto"> Alto(cm)</label>
+                    <input type="number" name="alto">
+                <label for="ancho"> Ancho(cm)</label>
+                    <input type="number" name="ancho">
+                <label for="profundidad">Profundidad(cm)</label>
+                    <input type="number" name="profundidad">
+            </div>
+            <div>
+                <label for="envio">Con envio</label>
+                    <input type="radio" name="envio" value="Si"
+                <label for="envio">Sin envio</label>
+                    <input type="radio" name="envio" value="No"
+            </div>
+            <div>
+                <label for="descripcion">Descripcion:</label>
+            </div>
+                <textarea name="descripcion"></textarea>
+            <div>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Borrar todo">
+            </div>
+        </form>
+        </article>
+    </section>
+        <h2 class="h2__compra--amoblamientos">Para amoblamientos comunicarse por privado</h2>
+        <h2>Preguntas Frecuentes</h2>
+        <h3>¿Cuánto tiempo hay de demora?</h3>
+        <p> Los factores que afectan la demora son: tiempo de entrega de materiales por parte de nuestro proveedor (Aprox. 7 dias), complejidad del mueble, feriados nacionales. Los carpinteros, dan aviso del tiempo ESTIMADO de demora para a entrega, una vez señado el producto.</p>
+        <h3>¿Cuáles son los medios de pago?</h3>
+        <p> El pago de los materiales (La seña del producto) puede financiarse. Esa información la brinda la pagina del nuestro proveedor (Moconá). El pago de la mano de obra es en: efevtivo/transferencia.</p>
+        <h3>¿Dónde puedo ver los colores?</h3>
+        <p>Los colores de las madera pueden verse en la pagina del proveedor (Moconá) o bien, presencialmente en sus locales. Tambien pueden verse personalmente con el muestrario del carpitero (Siempre esta mas actualizada la pagina del proveedor).</p>
+        <h3>¿Qué vigencia tiene el presupuesto?</h3>
+        <p>La vigencia del presupuesto es de 24hs. ¿Por qué? Por que eta sujeto a cambios del proveedor.</p>
+    </main>
+    <footer>
+        <img class="footer__img" src="../recursos/what.png" alt="logo.whatsapp">
+        <img class="footer__img" src="../recursos/Instagram.svg.png" alt="logo.instagram">
+        <img class="footer__img" src="../recursos/tiktok2.png" alt="logo.tiktok">
+        <img class="footer__img" src="../recursos/gmail3.png" alt="logo.gmail">
+        <img class="footer__img--youtube" src="../recursos/youtube2.png" alt="logo youtube">
+        <span> El horario de atención es de Lun a Vie de 08:00 a 18:00 hs</span>
+    </footer>
+</body>
+</html

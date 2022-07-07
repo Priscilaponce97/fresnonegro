@@ -1,0 +1,162 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+
+/* Class MAIN gral. */
+p{
+    font-family: 'Josefin Slab', serif;
+    padding: 0px 16px 0px 16px;
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+h2{
+    font-family: 'Cinzel', serif;
+    background-color: #ffae00;
+    text-align: center;
+}
+.h2__compra--amoblamientos{
+    margin: 0% 0% 2% 0%;
+}
+
+.h2__letra--importante {
+    background-color: #ffae00;
+}
+.form__lista {
+    font-family: 'Josefin Slab', serif;
+    font-size: 150%;
+}
+.form__formularios{
+    font-family: 'Josefin Slab', serif;
+    font-size: 150%;
+    margin: 30px;
+}
+/* Class HEADER */
+.header__nav {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 0px 30px 0px 0px;
+}
+.nav__ul {
+    list-style: none;
+}
+.header__li {
+    display: inline;
+    font-family: 'Cinzel', serif;
+}
+.header__li a {
+    color: white;
+    text-decoration: solid;
+}
+.header__logo {
+    position:sticky;
+    left: 0px;
+    display: inline;
+}
+/* Main (Inicio) */
+
+h3{
+    font-family: 'Cinzel', serif;
+}
+.img__productos--inicio{
+    width: 300px;
+    height: 300px;
+    margin: 16px;
+}
+/* Main (Productos) */
+main{
+    background-color: rgb(192, 179, 155);
+}
+.img__productos{
+    width: 400px;
+    height: 400px;
+    margin: 16px;
+}
+/* Main Compra */
+.main__compra{
+    display: flex;
+}
+.h2__compra{
+    text-align: center;
+}
+.img__compra{
+    width: 400px;
+    height: 500px;
+    margin: 0px 30px 30px 30px;
+}
+.form__lista--compra {
+    font-family: 'Josefin Slab', serif;
+    font-size: 100%;
+}
+/* Main Sobre Nosotros */
+.main__sobrenos{
+    display: flex;
+}
+.main__presentacion{
+    margin-left: 16px;
+}
+.p__presentacion{
+    font-size: 150%;
+}
+.h1__sobrenos{
+    font-size: 200%;
+}
+.main__ol{
+    font-size: 150%;
+    margin-left: 30px;
+}
+.info__carpinteros{
+    display: block;
+}
+.div__carpinteros{
+    display: flex;
+    margin: 16px;
+}
+.img__carpinteros{
+    width: 200px;
+    height: 200px;
+}
+.ul__carpinteros{
+    list-style: none;
+    font-size: 100%;
+}
+/* Main Contactos */
+.main__contactos{
+    display: flex;
+    justify-content: center;
+}
+.img__contactos{
+    width: 400px;
+    height: 600px;
+    margin: 0px 30px 30px 30px;
+}
+/* Footer */
+footer{
+    background-color: black;
+    padding: 16px 0px 16px 0px;
+}
+span { 
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+.footer__img{
+    width: 30px;
+    height: 30px;
+}
+.footer__img--mail{
+    width: 40px;
+    height: 30px;
+}
+.footer__img--youtube{
+    width: 50px;
+    height: 30px;
+}
