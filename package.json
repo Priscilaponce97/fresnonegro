@@ -1,0 +1,23 @@
+{
+  "name": "desarrollador",
+  "version": "1.0.0",
+  "description": "<h1> Fresno Negro - Proyecto Coder </h1>\r <p> Este sitio web es para un emprendimiento de muebles a medida </p>\r <h2> Tecnologias Usadas </h2>\r <ul>\r     <li> html5 </li>\r     <li> css3 </li>\r     <li> bootstrap </li>\r     <li> sass </li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priscilaponce97/fresnonegro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priscilaponce97/fresnonegro/issues"
+  },
+  "homepage": "https://github.com/Priscilaponce97/fresnonegro#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

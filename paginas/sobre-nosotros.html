@@ -9,19 +9,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <haeder>
-        <nav class="header__nav">
+        <nav class="header__nav navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
             <img class="header__logo" src="../recursos/corregido-18.png" alt="logo fresno negro">
-            <ul class="nav__ul">
-                <li class="header__li"> <a href="../index.html">INICIO</a></li>
-                <li class="header__li"> <a href="productos.html">PRODUCTOS</a></li>
-                <li class="header__li"> <a href="compra.html">COMPRA</a></li>
-                <li class="header__li"> <a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-                <li class="header__li"> <a href="contacto.html">CONTACTO</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compra.html">Compra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactos</a>
+                </li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex" role="Buscar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="button__nav btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
         </nav>
     </haeder>
     <main>
@@ -38,23 +62,27 @@
             </ol>
             </article>
             <article class="info__carpinteros">
-                <div class="div__carpinteros">
-                    <img class="img__carpinteros" src="../recursos/IMG-6973.jpg" alt="carpintero_maxi">
-                    <ul class="ul__carpinteros">
-                    <li>Maximiliano</li>
-                    <li>31 años</li>
-                    <li>Lic. En Tecnología de los Alimentos y Tecnico Bromatologo</li>
-                    <li>Carpintero</li>
-                    </ul>
+                <div class="card" style="width: 18rem;">
+                    <img src="../recursos/IMG-6973.jpg" class="card-img-top" alt="carpintero_maxi">
+                    <div class="card-body">
+                        <ul class="ul__carpinteros">
+                            <li>Maximiliano</li>
+                            <li>31 años</li>
+                            <li>Lic. En Tecnología de los Alimentos y Tecnico Bromatologo</li>
+                            <li>Carpintero</li>
+                            </ul>
+                    </div>
                 </div>
-                <div class="div__carpinteros">
-                    <img class="img__carpinteros" src="../recursos/IMG-6974.jpg" alt="carpintero_augusto">
-                    <ul class="ul__carpinteros">
-                    <li>Augusto</li>
-                    <li>26 años</li>
-                    <li>Lic. En Administración de Empresas</li>
-                    <li>Carpintero</li>
-                    </ul>
+                <div class="card" style="width: 18rem;">
+                    <img src="../recursos/IMG-6974.jpg" class="card-img-top" alt="carpintero_augusto">
+                    <div class="card-body">
+                        <ul class="ul__carpinteros">
+                            <li>Augusto</li>
+                            <li>26 años</li>
+                            <li>Lic. En Administración de Empresas</li>
+                            <li>Carpintero</li>
+                            </ul>
+                    </div>
                 </div>
             </article>    
         </section>
@@ -69,5 +97,6 @@
         <img class="footer__img--youtube" src="../recursos/youtube2.png" alt="logo youtube">
         <span> El horario de atención es de Lun a Vie de 08:00 a 18:00 hs</span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html

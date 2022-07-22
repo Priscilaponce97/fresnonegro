@@ -29,6 +29,10 @@ h2{
 .h2__letra--importante {
     background-color: #ffae00;
 }
+h5{
+    font-family: 'Cinzel', serif;
+    color: black;
+}
 .form__lista {
     font-family: 'PT Serif', serif;
     font-size: 100%;
@@ -42,12 +46,12 @@ h2{
 }
 /* Class HEADER */
 .header__nav {
-    background-image: linear-gradient(to top, black, whitesmoke);
+    background-image: linear-gradient(to top, rgb(102, 92, 92), whitesmoke);
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items:center; 
     flex-wrap: wrap;
     padding: 0px 30px 0px 0px;
 }
@@ -71,30 +75,38 @@ h2{
 }
 /* INICIO */
 /* Main*/
+.img__carrusel{
+    width: 100%;
+    height: 50%;
+}
 h3{
     font-family: 'Cinzel', serif;
 }
 button{
     width: 100px;
     height: 30px;
-    background-image: linear-gradient(to top, grey, white);
+    background-image: linear-gradient(to top, rgb(100, 99, 98), rgb(255, 255, 255));
     border: black solid 2px;
     border-radius: 10%;
     font-family: 'Cinzel', serif;
     font-size: 16px;
 }
 button:hover{
-    background-image: linear-gradient(to top, white, grey);
+    background-image: linear-gradient(to top, white, rgb(100, 99, 98));
 }
-video{
-    width: 300px;
-    height: 400px;
+.button__nav{
+    font-family: 'Cinzel', serif;
+    color: black;
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(100, 99, 98));
+}
+.button__nav:hover{
+    background-image: linear-gradient(to top,  rgb(100, 99, 98) rgb(255, 255, 255));
 }
 /* Grids */
 .inicio__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
     column-gap: 5px;
     row-gap: 5px;
     width: 100vw;
@@ -420,6 +432,9 @@ video{
     }
 }
 /* Main Compra */
+h3{
+    color: whitesmoke;
+}
 .main__compra{
     display: flex;
 }
@@ -454,7 +469,9 @@ video{
     color: whitesmoke
 }
 .info__carpinteros{
-    display: block;
+    display: flex;
+    height: 50%;
+    margin: 16px 5px 0px 0px;
 }
 .div__carpinteros{
     display: flex;
@@ -467,9 +484,13 @@ video{
 .ul__carpinteros{
     list-style: none;
     font-size: 100%;
-    color: whitesmoke
+    color: rgb(19, 18, 18)
 }
+
 /* Main Contactos */
+.color__letras{
+    color: #000000;
+}
 .main__contactos{
     display: flex;
     justify-content: center;
@@ -499,4 +520,7 @@ span {
 .footer__img--youtube{
     width: 50px;
     height: 30px;
+}
+.carousel__altura{
+    height: 30%;
 }
