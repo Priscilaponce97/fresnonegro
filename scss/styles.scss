@@ -22,12 +22,11 @@ h2{
     background-color: #ffae00;
     text-align: center;
 }
-.h2__compra--amoblamientos{
-    margin: 0% 0% 2% 0%;
-}
-
 .h2__letra--importante {
     background-color: #ffae00;
+}
+h3{
+    color: whitesmoke;
 }
 h5{
     font-family: 'Cinzel', serif;
@@ -45,7 +44,8 @@ h5{
     color: whitesmoke
 }
 /* Class HEADER */
-.header__nav {
+.header{
+&__nav {
     background-image: linear-gradient(to top, rgb(102, 92, 92), whitesmoke);
     position: sticky;
     top: 0px;
@@ -55,23 +55,24 @@ h5{
     flex-wrap: wrap;
     padding: 0px 30px 0px 0px;
 }
-.nav__ul {
-    list-style: none;
-}
-.header__li {
+&__li {
     display: inline;
     font-family: 'Cinzel', serif;
 }
-.header__li a {
+&__li a {
     color: white;
     text-decoration: solid;
 }
-.header__logo {
+&__logo {
     position:sticky;
     left: 0px;
     display: inline;
     width: 70px;
     height: 70px;
+}
+}
+.nav__ul {
+    list-style: none;
 }
 /* INICIO */
 /* Main*/
@@ -79,6 +80,9 @@ h5{
     width: 100%;
     object-fit: cover;
     height: 70vh !important;
+}
+.img__comoda{
+    background-position: bottom;
 }
 h3{
     font-family: 'Cinzel', serif;
@@ -92,16 +96,18 @@ button{
     font-family: 'Cinzel', serif;
     font-size: 16px;
 }
-button:hover{
+.button{
+    &:hover{
     background-image: linear-gradient(to top, white, rgb(100, 99, 98));
-}
-.button__nav{
+    }
+    &__nav{
     font-family: 'Cinzel', serif;
     color: black;
     background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(100, 99, 98));
-}
-.button__nav:hover{
+    }
+    &__nav:hover{
     background-image: linear-gradient(to top,  rgb(100, 99, 98) rgb(255, 255, 255));
+    }
 }
 /* Grids */
 .inicio__grid{
@@ -295,10 +301,11 @@ button:hover{
     background-repeat: no-repeat;
     grid-column: 5/6;
     grid-row: 1/4;
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
 }
-.nordicauno:hover{
-    transform: scale(1.2,1.2);
-}
+
 .espejo{
     background-image: url(../recursos/espejo.JPG);
     background-position: top;
@@ -307,10 +314,11 @@ button:hover{
     grid-column: 4/6;
     grid-row: 4/6;
     padding: 16px;
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
 }
-.espejo:hover{
-    transform: scale(1.2,1.2);
-}
+
 .auxiliar{
     background-image: url(../recursos/auxiliar.JPG);
     background-position: center;
@@ -318,9 +326,9 @@ button:hover{
     background-repeat: no-repeat;
     grid-column: 4/5;
     grid-row: 1/4;
-}
-.auxiliar:hover{
-    transform: scale(1.2,1.2);
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
 }
 .comoda{
     background-image: url(../recursos/comoda.JPG);
@@ -329,9 +337,9 @@ button:hover{
     background-repeat: no-repeat;
     grid-column: 3/4;
     grid-row: 4/6;
-}
-.comoda:hover{
-    transform: scale(1.2,1.2);
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
 }
 .vanitory{
     background-image: url(../recursos/vanitory.JPG);
@@ -340,9 +348,9 @@ button:hover{
     background-repeat: no-repeat;
     grid-column: 1/3;
     grid-row: 1/6;
-}
-.vanitory:hover{
-    transform: scale(1.2,1.2);
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
 }
 .rackdos{
     background-image: url(../recursos/rackdos.jpg);
@@ -351,10 +359,11 @@ button:hover{
     background-repeat: no-repeat;
     grid-column: 3/4;
     grid-row: 1/4;
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
 }
-.rackdos:hover{
-    transform: scale(1.2,1.2);
-}
+
 @media (min-width: 576px) and (max-width: 1020px){
     .productos__grid{
         grid-template-columns: 3fr 2fr 2fr;
@@ -433,70 +442,64 @@ button:hover{
     }
 }
 /* Main Compra */
-h3{
-    color: whitesmoke;
-}
 .main__compra{
     display: flex;
-}
-.h2__compra{
+    &__h2{
     text-align: center;
+    }
+    &__img{
+        width: 400px;
+        height: 500px;
+        margin: 0px 30px 30px 30px;
+    }
 }
-.img__compra{
-    width: 400px;
-    height: 500px;
-    margin: 0px 30px 30px 30px;
-}
-.form__lista--compra {
+.compra__form--lista{
     font-family: 'PT Serif', serif;
     font-size: 100%;
 }
 /* Main Sobre Nosotros */
 .main__sobrenos{
     display: flex;
-}
-.main__presentacion{
-    margin-left: 16px;
+    &__presentacion{
+        margin-left: 16px;
+    }
+    &__h1{
+        font-size: 200%;
+    }
 }
 .p__presentacion{
     font-size: 150%;
-}
-.h1__sobrenos{
-    font-size: 200%;
 }
 .main__ol{
     font-size: 150%;
     margin-left: 30px;
     color: whitesmoke
 }
-.info__carpinteros{
+.carpinteros{
+    &__info{
     display: flex;
     height: 50%;
     margin: 16px 5px 0px 0px;
-}
-.div__carpinteros{
-    display: flex;
-    margin: 16px;
-}
-.img__carpinteros{
+    }
+    &__img{
     width: 200px;
     height: 200px;
-}
-.ul__carpinteros{
+    }
+    &__ul{
     list-style: none;
     font-size: 100%;
     color: rgb(19, 18, 18)
+    }
 }
-
 /* Main Contactos */
-.color__letras{
-    color: #000000;
-}
-.main__contactos{
+.main__contacto{
     display: flex;
     justify-content: center;
 }
-.img__contactos{
+.color__letra--contacto{
+    color: black;
+}
+.img__contacto{
     width: 400px;
     height: 600px;
     margin: 0px 30px 30px 30px;
@@ -505,20 +508,23 @@ h3{
 footer{
     background-image: linear-gradient(to top,  whitesmoke, black);
     padding: 16px 0px 16px 0px;
+    &__img{
+        width: 30px;
+        height: 30px;
+    }
+    &__img--mail{
+        width: 40px;
+        height: 30px;
+    }
+    &__img--youtube{
+        width: 50px;
+        height: 30px;
+    }
 }
-span { 
+.span { 
     font-family: 'Cinzel', serif;
     color: white;
 }
-.footer__img{
-    width: 30px;
-    height: 30px;
-}
-.footer__img--mail{
-    width: 40px;
-    height: 30px;
-}
-.footer__img--youtube{
-    width: 50px;
-    height: 30px;
-}
+
+
+
