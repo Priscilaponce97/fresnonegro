@@ -54,6 +54,7 @@ h5{
     align-items:center; 
     flex-wrap: wrap;
     padding: 0px 30px 0px 0px;
+    z-index:1000;
 }
 &__li {
     display: inline;
@@ -80,9 +81,6 @@ h5{
     width: 100%;
     object-fit: cover;
     height: 70vh !important;
-}
-.img__comoda{
-    background-position: bottom;
 }
 h3{
     font-family: 'Cinzel', serif;
@@ -460,13 +458,14 @@ button{
 /* Main Sobre Nosotros */
 .main__sobrenos{
     display: flex;
-    &__presentacion{
-        margin-left: 16px;
-    }
-    &__h1{
-        font-size: 200%;
-    }
 }
+.main__presentacion{
+    margin-left: 16px;
+}
+.h1__sobrenos{
+    font-size: 200%;
+}
+
 .p__presentacion{
     font-size: 150%;
 }
@@ -475,21 +474,27 @@ button{
     margin-left: 30px;
     color: whitesmoke
 }
-.carpinteros{
-    &__info{
+.info__carpinteros{
     display: flex;
-    height: 50%;
-    margin: 16px 5px 0px 0px;
-    }
+    margin: 16px 5px 10px 5px;
+}
+.div__carpinteros{
+    margin: 16px 16px 16px 16px;
+}
+.carpinteros{ 
     &__img{
-    width: 200px;
-    height: 200px;
+    width: 100vw;
+    height: 100vh;
     }
     &__ul{
     list-style: none;
     font-size: 100%;
     color: rgb(19, 18, 18)
     }
+}
+.ustedes__img{
+    width: 250px;
+    height: 300px;
 }
 /* Main Contactos */
 .main__contacto{

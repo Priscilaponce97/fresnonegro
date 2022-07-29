@@ -445,6 +445,9 @@ h3 {
   list-style: none;
   font-size: 100%;
   color: #131212; }
+.ustedes__img{
+    width: 250px;
+    height: 300px;}
 
 /* Main Contactos */
 .color__letras {
