@@ -4,7 +4,8 @@
 
 /* Class MAIN gral. */
 main {
-  background-color: #000000; }
+  background-color: #000000;
+  height: auto; }
 
 p {
   padding: 0px 16px 0px 16px;
@@ -21,11 +22,11 @@ h2 {
   background-color: #ffae00;
   text-align: center; }
 
-.h2__compra--amoblamientos {
-  margin: 0% 0% 2% 0%; }
-
 .h2__letra--importante {
   background-color: #ffae00; }
+
+h3 {
+  color: whitesmoke; }
 
 h5 {
   font-family: 'Cinzel', serif;
@@ -51,10 +52,8 @@ h5 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0px 30px 0px 0px; }
-
-.nav__ul {
-  list-style: none; }
+  padding: 0px 30px 0px 0px;
+  z-index: 1000; }
 
 .header__li {
   display: inline;
@@ -70,6 +69,9 @@ h5 {
   display: inline;
   width: 70px;
   height: 70px; }
+
+.nav__ul {
+  list-style: none; }
 
 /* INICIO */
 /* Main*/
@@ -90,7 +92,7 @@ button {
   font-family: 'Cinzel', serif;
   font-size: 16px; }
 
-button:hover {
+.button:hover {
   background-image: linear-gradient(to top, white, #646362); }
 
 .button__nav {
@@ -100,6 +102,9 @@ button:hover {
 
 .button__nav:hover {
   background-image: linear-gradient(to top, #646362 white); }
+
+.texto__inicio {
+  color: whitesmoke; }
 
 /* Grids */
 .inicio__grid {
@@ -260,7 +265,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 10px 10px 0px 0px; }
 
 .nordicauno {
@@ -270,9 +275,8 @@ button:hover {
   background-repeat: no-repeat;
   grid-column: 5/6;
   grid-row: 1/4; }
-
-.nordicauno:hover {
-  transform: scale(1.2, 1.2); }
+  .nordicauno:hover {
+    transform: scale(1.2, 1.2); }
 
 .espejo {
   background-image: url(../recursos/espejo.JPG);
@@ -282,9 +286,8 @@ button:hover {
   grid-column: 4/6;
   grid-row: 4/6;
   padding: 16px; }
-
-.espejo:hover {
-  transform: scale(1.2, 1.2); }
+  .espejo:hover {
+    transform: scale(1.2, 1.2); }
 
 .auxiliar {
   background-image: url(../recursos/auxiliar.JPG);
@@ -293,9 +296,8 @@ button:hover {
   background-repeat: no-repeat;
   grid-column: 4/5;
   grid-row: 1/4; }
-
-.auxiliar:hover {
-  transform: scale(1.2, 1.2); }
+  .auxiliar:hover {
+    transform: scale(1.2, 1.2); }
 
 .comoda {
   background-image: url(../recursos/comoda.JPG);
@@ -304,9 +306,8 @@ button:hover {
   background-repeat: no-repeat;
   grid-column: 3/4;
   grid-row: 4/6; }
-
-.comoda:hover {
-  transform: scale(1.2, 1.2); }
+  .comoda:hover {
+    transform: scale(1.2, 1.2); }
 
 .vanitory {
   background-image: url(../recursos/vanitory.JPG);
@@ -315,9 +316,8 @@ button:hover {
   background-repeat: no-repeat;
   grid-column: 1/3;
   grid-row: 1/6; }
-
-.vanitory:hover {
-  transform: scale(1.2, 1.2); }
+  .vanitory:hover {
+    transform: scale(1.2, 1.2); }
 
 .rackdos {
   background-image: url(../recursos/rackdos.jpg);
@@ -326,9 +326,8 @@ button:hover {
   background-repeat: no-repeat;
   grid-column: 3/4;
   grid-row: 1/4; }
-
-.rackdos:hover {
-  transform: scale(1.2, 1.2); }
+  .rackdos:hover {
+    transform: scale(1.2, 1.2); }
 
 @media (min-width: 576px) and (max-width: 1020px) {
   .productos__grid {
@@ -368,47 +367,47 @@ button:hover {
   .vanitory {
     grid-column: 1/2;
     grid-row: 1/3;
-    background-size: contain; }
+    background-size: cover; }
   .rackdos {
     grid-column: 1/2;
     grid-row: 3/5;
-    background-size: contain; }
+    background-size: cover; }
   .comoda {
     grid-column: 1/2;
     grid-row: 5/7;
-    background-size: contain; }
+    background-size: cover; }
   .auxiliar {
     grid-column: 1/2;
     grid-row: 7/9;
-    background-size: contain; }
+    background-size: cover; }
   .nordicauno {
     grid-column: 1/2;
     grid-row: 9/11;
-    background-size: contain; }
+    background-size: cover; }
   .espejo {
     grid-column: 1/2;
     grid-row: 11/13;
     padding: 16px;
-    background-size: contain; } }
+    background-size: cover; } }
 
 /* Main Compra */
-h3 {
-  color: whitesmoke; }
-
 .main__compra {
   display: flex; }
 
-.h2__compra {
-  text-align: center; }
-
-.img__compra {
+.compra__img {
   width: 400px;
   height: 500px;
   margin: 0px 30px 30px 30px; }
 
-.form__lista--compra {
+.compra__h2 {
+  text-align: center; }
+
+.compra__form--lista {
   font-family: 'PT Serif', serif;
   font-size: 100%; }
+
+.formuario {
+  display: block; }
 
 /* Main Sobre Nosotros */
 .main__sobrenos {
@@ -417,11 +416,11 @@ h3 {
 .main__presentacion {
   margin-left: 16px; }
 
-.p__presentacion {
-  font-size: 150%; }
-
 .h1__sobrenos {
   font-size: 200%; }
+
+.p__presentacion {
+  font-size: 150%; }
 
 .main__ol {
   font-size: 150%;
@@ -430,55 +429,55 @@ h3 {
 
 .info__carpinteros {
   display: flex;
-  height: 50%;
-  margin: 16px 5px 0px 0px; }
+  margin: 16px 5px 10px 5px; }
 
 .div__carpinteros {
-  display: flex;
-  margin: 16px; }
+  margin: 16px 16px 16px 16px; }
 
-.img__carpinteros {
-  width: 200px;
-  height: 200px; }
+.carpinteros__img {
+  width: 100vw;
+  height: 100vh; }
 
-.ul__carpinteros {
+.carpinteros__ul {
   list-style: none;
   font-size: 100%;
   color: #131212; }
-.ustedes__img{
-    width: 250px;
-    height: 300px;}
+
+.ustedes__img {
+  width: 250px;
+  height: 300px; }
 
 /* Main Contactos */
-.color__letras {
-  color: #000000; }
-
-.main__contactos {
+.main__contacto {
   display: flex;
   justify-content: center; }
 
-.img__contactos {
+.color__letra--contacto {
+  color: black; }
+
+.img__contacto {
   width: 400px;
   height: 600px;
   margin: 0px 30px 30px 30px; }
 
 /* Footer */
 footer {
-  background-image: linear-gradient(to top, whitesmoke, black);
-  padding: 16px 0px 16px 0px; }
-
-span {
-  font-family: 'Cinzel', serif;
-  color: white; }
+  background-image: linear-gradient(to top, grey, black);
+  padding: 16px 0px 16px 0px;
+  height: auto;
+  display: flex; }
 
 .footer__img {
   width: 30px;
   height: 30px; }
 
-.footer__img--mail {
-  width: 40px;
-  height: 30px; }
-
 .footer__img--youtube {
   width: 50px;
   height: 30px; }
+
+.footer__nav {
+  list-style: none; }
+
+.footer__texto {
+  font-family: 'Cinzel', serif;
+  color: white; }

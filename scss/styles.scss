@@ -5,6 +5,7 @@
 /* Class MAIN gral. */
 main{
     background-color: #000000;
+    height: auto;
 }
 p{
     padding: 0px 16px 0px 16px;
@@ -106,6 +107,9 @@ button{
     &__nav:hover{
     background-image: linear-gradient(to top,  rgb(100, 99, 98) rgb(255, 255, 255));
     }
+}
+.texto__inicio{
+    color: whitesmoke;
 }
 /* Grids */
 .inicio__grid{
@@ -289,7 +293,7 @@ button{
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 10px 10px 0px 0px;
 }
 .nordicauno{
@@ -300,10 +304,9 @@ button{
     grid-column: 5/6;
     grid-row: 1/4;
     &:hover{
-        transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
     }
 }
-
 .espejo{
     background-image: url(../recursos/espejo.JPG);
     background-position: top;
@@ -313,10 +316,9 @@ button{
     grid-row: 4/6;
     padding: 16px;
     &:hover{
-        transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
     }
 }
-
 .auxiliar{
     background-image: url(../recursos/auxiliar.JPG);
     background-position: center;
@@ -325,7 +327,7 @@ button{
     grid-column: 4/5;
     grid-row: 1/4;
     &:hover{
-        transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
     }
 }
 .comoda{
@@ -361,7 +363,6 @@ button{
         transform: scale(1.2,1.2);
     }
 }
-
 @media (min-width: 576px) and (max-width: 1020px){
     .productos__grid{
         grid-template-columns: 3fr 2fr 2fr;
@@ -410,50 +411,53 @@ button{
     .vanitory{
     grid-column: 1/2;
     grid-row: 1/3;
-    background-size: contain;
+    background-size: cover;
     }
     .rackdos{
     grid-column: 1/2;
     grid-row: 3/5;
-    background-size: contain;
+    background-size: cover;
     }
     .comoda{
     grid-column: 1/2;
     grid-row: 5/7;
-    background-size: contain;
+    background-size: cover;
     }
     .auxiliar{
     grid-column: 1/2;
     grid-row: 7/9;
-    background-size: contain
+    background-size: cover;
     }
     .nordicauno{
     grid-column: 1/2;
     grid-row: 9/11;
-    background-size: contain
+    background-size: cover;
     }
     .espejo{
     grid-column: 1/2;
     grid-row: 11/13;
     padding: 16px;
-    background-size: contain
+    background-size: cover;
     }
 }
 /* Main Compra */
 .main__compra{
     display: flex;
-    &__h2{
-    text-align: center;
-    }
-    &__img{
-        width: 400px;
-        height: 500px;
-        margin: 0px 30px 30px 30px;
-    }
 }
+.compra__img{
+    width: 400px;
+    height: 500px;
+    margin: 0px 30px 30px 30px;
+}
+.compra__h2{
+    text-align: center;
+    }  
 .compra__form--lista{
     font-family: 'PT Serif', serif;
     font-size: 100%;
+}
+.formuario{
+    display:block
 }
 /* Main Sobre Nosotros */
 .main__sobrenos{
@@ -465,14 +469,13 @@ button{
 .h1__sobrenos{
     font-size: 200%;
 }
-
 .p__presentacion{
     font-size: 150%;
 }
 .main__ol{
     font-size: 150%;
     margin-left: 30px;
-    color: whitesmoke
+    color: whitesmoke;
 }
 .info__carpinteros{
     display: flex;
@@ -511,25 +514,23 @@ button{
 }
 /* Footer */
 footer{
-    background-image: linear-gradient(to top,  whitesmoke, black);
+    background-image: linear-gradient(to top, grey, black);
     padding: 16px 0px 16px 0px;
-    &__img{
+    height: auto;
+    display: flex;
+}
+.footer__img{
         width: 30px;
-        height: 30px;
+        height:30px;
     }
-    &__img--mail{
-        width: 40px;
-        height: 30px;
-    }
-    &__img--youtube{
+.footer__img--youtube{
         width: 50px;
         height: 30px;
     }
-}
-.span { 
+.footer__nav{
+        list-style: none;
+    }
+.footer__texto { 
     font-family: 'Cinzel', serif;
     color: white;
 }
-
-
-
