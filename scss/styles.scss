@@ -22,27 +22,25 @@ h3{
 button{
     width: 100px;
     height: 30px;
-    background-image: linear-gradient(to top, white, rgb(100, 99, 98));
     border: black solid 2px;
     border-radius: 10%;
     font-family: $Font-principal;
     font-size: 16px;
+    background-image: linear-gradient(to top, white, black);
 }
-.button{
-    &:hover{
-        background-image: linear-gradient(to top, white, rgb(100, 99, 98));
-        }
-    &__nav{
-        font-family: 'Cinzel', serif;
+button:hover{
+    background-image: linear-gradient(to top, black, white);
+}
+    .button__nav{
+        font-family: $Font-principal;
         color: $Color-principal;
-        background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(100, 99, 98));
-        }
-    &__nav:hover{
-        background-image: linear-gradient(to top,  rgb(100, 99, 98) rgb(255, 255, 255));
-        }
-}
+        background-image: linear-gradient(to top, white, black);
+    }
+    .button__nav:hover{
+        background-image: linear-gradient(to top,  black, rgb(255, 255, 255));
+    }
 .texto__inicio{
-    color: whitesmoke;
+    color: $Color-secundario;
 }
 /* PRODUCTOS */
 /* Main Compra */
@@ -62,6 +60,9 @@ button{
         font-family: $Font-secundario;
         font-size: 100%;
     }
+}
+.compra__margin{
+    margin: 10px 0px 10px 0px;
 }
 .formuario{
     display:block

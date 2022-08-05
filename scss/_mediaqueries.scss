@@ -170,7 +170,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     margin: 10px 10px 0px 0px;
 }
@@ -260,9 +260,13 @@
         grid-column: 1/2;
         grid-row: 3/5;
         padding: 16px;
-    } 
-}
+        }
+} 
 @media (min-width: 320px) and (max-width: 575px) {
+    main{
+        height: 200vh;
+        width: auto;
+    }
     .header__li {
     display: flex;
     justify-content: center;
@@ -273,8 +277,7 @@
     }
     .productos__grid{
     grid-template-columns: 3fr;
-    grid-template-rows: auto;
-    row-gap: 5px;
+    grid-template-rows: 20fr 30fr 50fr 40fr 50fr 30fr 30fr 30fr 50fr 20fr 30fr 10fr;
     }
     .vanitory{
     grid-column: 1/2;
@@ -307,4 +310,7 @@
     padding: 16px;
     background-size: cover;
     }
+footer{
+    height: auto;
+}
 }
