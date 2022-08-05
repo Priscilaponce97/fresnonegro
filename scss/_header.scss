@@ -1,0 +1,31 @@
+.header{
+    &__nav {
+        background-image: linear-gradient(to top, rgb(102, 92, 92), whitesmoke);
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center; 
+        flex-wrap: wrap;
+        padding: 0px 30px 0px 0px;
+        z-index:1000;
+    }
+    &__li {
+        display: inline;
+        font-family: $Font-principal;
+    }
+    &__li a {
+        color: $Color-secundario;
+        text-decoration: solid;
+    }
+    &__logo {
+        position:sticky;
+        left: 0px;
+        display: inline;
+        width: 70px;
+        height: 70px;
+    }
+}
+.nav__ul {
+    list-style: none;
+}

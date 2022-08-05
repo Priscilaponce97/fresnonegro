@@ -1,24 +1,36 @@
-* {
-  margin: 0px;
-  padding: 0px; }
+footer {
+  background-image: linear-gradient(to top, grey, black);
+  padding: 16px 0px 16px 0px;
+  height: auto;
+  display: flex; }
+  footer .footer__img {
+    width: 30px;
+    height: 30px; }
+  footer .footer__img--youtube {
+    width: 50px;
+    height: 30px; }
+  footer .footer__nav {
+    list-style: none; }
+  footer .footer__texto {
+    font-family: "Cinzel", serif;
+    color: whitesmoke; }
 
-/* Class MAIN gral. */
 main {
-  background-color: #000000;
+  background-color: black;
   height: auto; }
 
 p {
   padding: 0px 16px 0px 16px;
   color: whitesmoke;
-  font-family: 'PT Serif', serif; }
+  font-family: "PT Serif", serif; }
 
 h1 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   text-align: center;
   color: whitesmoke; }
 
 h2 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   background-color: #ffae00;
   text-align: center; }
 
@@ -29,21 +41,20 @@ h3 {
   color: whitesmoke; }
 
 h5 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: black; }
 
 .form__lista {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 100%;
   color: black; }
 
 .form__formularios {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 150%;
   margin: 30px;
   color: whitesmoke; }
 
-/* Class HEADER */
 .header__nav {
   background-image: linear-gradient(to top, #665c5c, whitesmoke);
   position: sticky;
@@ -57,10 +68,10 @@ h5 {
 
 .header__li {
   display: inline;
-  font-family: 'Cinzel', serif; }
+  font-family: "Cinzel", serif; }
 
 .header__li a {
-  color: white;
+  color: whitesmoke;
   text-decoration: solid; }
 
 .header__logo {
@@ -73,38 +84,10 @@ h5 {
 .nav__ul {
   list-style: none; }
 
-/* INICIO */
-/* Main*/
-.img__carrusel {
-  width: 100%;
-  object-fit: cover;
-  height: 70vh !important; }
-
-h3 {
-  font-family: 'Cinzel', serif; }
-
-button {
-  width: 100px;
-  height: 30px;
-  background-image: linear-gradient(to top, #646362, white);
-  border: black solid 2px;
-  border-radius: 10%;
-  font-family: 'Cinzel', serif;
-  font-size: 16px; }
-
-.button:hover {
-  background-image: linear-gradient(to top, white, #646362); }
-
-.button__nav {
-  font-family: 'Cinzel', serif;
-  color: black;
-  background-image: linear-gradient(to top, white, #646362); }
-
-.button__nav:hover {
-  background-image: linear-gradient(to top, #646362 white); }
-
-.texto__inicio {
-  color: whitesmoke; }
+.background__productos, .altomesada, .doble, .nordicatres, .wengue, .nordicauno, .auxiliar, .comoda, .vanitory, .rackdos {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* Grids */
 .inicio__grid {
@@ -134,33 +117,21 @@ button {
 
 .altomesada {
   background-image: url(../recursos/altomesada.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 1/3;
   grid-row: 1/3; }
 
 .doble {
   background-image: url(../recursos/doble.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 2/4;
   grid-row: 3/5; }
 
 .nordicatres {
   background-image: url(../recursos/nordicatres.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 4/5;
   grid-row: 1/4; }
 
 .wengue {
   background-image: url(../recursos/wengue);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 3/4;
   grid-row: 1/3; }
 
@@ -172,7 +143,7 @@ button {
   grid-column: 1/2;
   grid-row: 3/5; }
 
-/* Media Queries */
+/* Media Queries INICIO */
 @media (min-width: 576px) and (max-width: 1020px) {
   .inicio__grid {
     display: grid;
@@ -258,7 +229,6 @@ button {
     grid-column: 1/2;
     grid-row: 5/6; } }
 
-/* PRODUCTOS */
 /* GRID PRODUCTOS */
 .productos__grid {
   display: grid;
@@ -270,9 +240,6 @@ button {
 
 .nordicauno {
   background-image: url(../recursos/nordicauno.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 5/6;
   grid-row: 1/4; }
   .nordicauno:hover {
@@ -291,9 +258,6 @@ button {
 
 .auxiliar {
   background-image: url(../recursos/auxiliar.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 4/5;
   grid-row: 1/4; }
   .auxiliar:hover {
@@ -301,9 +265,6 @@ button {
 
 .comoda {
   background-image: url(../recursos/comoda.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 3/4;
   grid-row: 4/6; }
   .comoda:hover {
@@ -311,9 +272,6 @@ button {
 
 .vanitory {
   background-image: url(../recursos/vanitory.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 1/3;
   grid-row: 1/6; }
   .vanitory:hover {
@@ -321,9 +279,6 @@ button {
 
 .rackdos {
   background-image: url(../recursos/rackdos.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 3/4;
   grid-row: 1/4; }
   .rackdos:hover {
@@ -390,6 +345,44 @@ button {
     padding: 16px;
     background-size: cover; } }
 
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* INICIO */
+/* Main*/
+.img__carrusel {
+  width: 100%;
+  object-fit: cover;
+  height: 70vh !important; }
+
+h3 {
+  font-family: "Cinzel", serif; }
+
+button {
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(to top, white, #646362);
+  border: black solid 2px;
+  border-radius: 10%;
+  font-family: "Cinzel", serif;
+  font-size: 16px; }
+
+.button:hover {
+  background-image: linear-gradient(to top, white, #646362); }
+
+.button__nav {
+  font-family: 'Cinzel', serif;
+  color: black;
+  background-image: linear-gradient(to top, white, #646362); }
+
+.button__nav:hover {
+  background-image: linear-gradient(to top, #646362 white); }
+
+.texto__inicio {
+  color: whitesmoke; }
+
+/* PRODUCTOS */
 /* Main Compra */
 .main__compra {
   display: flex; }
@@ -403,7 +396,7 @@ button {
   text-align: center; }
 
 .compra__form--lista {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 100%; }
 
 .formuario {
@@ -416,16 +409,16 @@ button {
 .main__presentacion {
   margin-left: 16px; }
 
+.main__ol {
+  font-size: 150%;
+  margin-left: 30px;
+  color: whitesmoke; }
+
 .h1__sobrenos {
   font-size: 200%; }
 
 .p__presentacion {
   font-size: 150%; }
-
-.main__ol {
-  font-size: 150%;
-  margin-left: 30px;
-  color: whitesmoke; }
 
 .info__carpinteros {
   display: flex;
@@ -441,43 +434,21 @@ button {
 .carpinteros__ul {
   list-style: none;
   font-size: 100%;
-  color: #131212; }
+  color: black; }
 
 .ustedes__img {
   width: 250px;
   height: 300px; }
 
 /* Main Contactos */
-.main__contacto {
+.contacto__main {
   display: flex;
   justify-content: center; }
 
-.color__letra--contacto {
-  color: black; }
-
-.img__contacto {
+.contacto__img {
   width: 400px;
   height: 600px;
   margin: 0px 30px 30px 30px; }
 
-/* Footer */
-footer {
-  background-image: linear-gradient(to top, grey, black);
-  padding: 16px 0px 16px 0px;
-  height: auto;
-  display: flex; }
-
-.footer__img {
-  width: 30px;
-  height: 30px; }
-
-.footer__img--youtube {
-  width: 50px;
-  height: 30px; }
-
-.footer__nav {
-  list-style: none; }
-
-.footer__texto {
-  font-family: 'Cinzel', serif;
-  color: white; }
+.color__letra--contacto {
+  color: black; }

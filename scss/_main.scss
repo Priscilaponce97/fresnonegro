@@ -1,0 +1,41 @@
+main{
+    background-color: $Color-principal;
+    height: auto;
+}
+p{
+    padding: 0px 16px 0px 16px;
+    color: $Color-secundario;
+    font-family: $Font-secundario;
+}
+
+h1{
+    font-family: $Font-principal;
+    text-align: center;
+    color: $Color-secundario;
+}
+h2{
+    font-family: $Font-principal;
+    background-color: #ffae00;
+    text-align: center;
+}
+.h2__letra--importante {
+    background-color: #ffae00;
+}
+h3{
+    color: whitesmoke;
+}
+h5{
+    font-family: $Font-principal;
+    color: $Color-principal;
+}
+.form__lista {
+    font-family: $Font-secundario;
+    font-size: 100%;
+    color: $Color-principal;
+}
+.form__formularios{
+    font-family: $Font-secundario;
+    font-size: 150%;
+    margin: 30px;
+    color: whitesmoke
+}
