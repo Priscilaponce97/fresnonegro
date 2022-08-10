@@ -41,6 +41,7 @@ button:hover{
     }
 .texto__inicio{
     color: $Color-secundario;
+    justify-content: center;
 }
 /* PRODUCTOS */
 /* Main Compra */
@@ -49,9 +50,7 @@ button:hover{
 }
 .compra{
     &__img{
-        width: 400px;
-        height: 500px;
-        margin: 0px 30px 30px 30px;
+        padding: 10px 10px 10px 10px;
     }
     &__h2{
         text-align: center;
@@ -67,17 +66,21 @@ button:hover{
 .formuario{
     display:block
 }
+.amoblamientos{
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
 /* Main Sobre Nosotros */
 .main{
     &__sobrenos{
         display: flex;
     }
     &__presentacion{
-        margin-left: 16px;
+        margin: 16px 10px 16px 10px;
     }
     &__ol{
         font-size: 150%;
-        margin-left: 30px;
+        margin: 10px 5px 10px 5px;
         color: whitesmoke;
     }
 }

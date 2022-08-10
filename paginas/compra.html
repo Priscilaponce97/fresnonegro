@@ -53,9 +53,10 @@
     <main>
         <h1> ¿Como Comprar?</h1>
         <section class="main__compra">
-            <article>
-                <img class="compra__img" src="../recursos/IMG-6964.JPG" alt="pasos de compra">
-            </article>
+            <picture>
+                <source srcset="../recursos/IMG-6964.JPG" type="image/svg+xml">
+                <img src="../recursos/IMG-6964.JPG" class="img-fluid img-thumbnail" alt="...">
+            </picture>
             <article class="formulario">
         <div>
             <h2 class="compra__h2">Pedi tu presupuesto (cliente particular)</h2>
@@ -137,13 +138,13 @@
                 <button type="button" class="btn btn-primary btn-sm">Enviar</button>
                 <button type="button" class="btn btn-secondary btn-sm">Borrar todo</button>
             </div>
-        </article>
-        </section>
     </form>
-    <div class="alert alert-warning" role="alert">
+    </article>
+</section>
+        <div class= "amoblamientos alert alert-warning" role="alert">
         Para amoblamientos, comunicarse por privado.
     </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class=" accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -187,7 +188,7 @@
     </main>
     <footer>
         <ul class="footer__nav">
-            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="../index.html">Inicio</a></li>
             <li><a href="paginas/productos.html">Productos</a></li>
             <li><a href="paginas/compra.html">Compra</a></li>
             <li><a href="paginas/sobre-nosotros.html">Sobre Nosotros</a></li>
