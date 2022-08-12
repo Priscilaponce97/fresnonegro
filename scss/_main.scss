@@ -15,11 +15,11 @@ h1{
 }
 h2{
     font-family: $Font-principal;
-    background-color: #ffae00;
+    background-color: $Color-secundario;
     text-align: center;
 }
 .h2__letra--importante {
-    background-color: #ffae00;
+    background-color: $Color-secundario;
 }
 h3{
     color: whitesmoke;
@@ -37,5 +37,5 @@ h5{
     font-family: $Font-secundario;
     font-size: 100%;
     margin: 30px;
-    color: whitesmoke
+    color: $Color-secundario;
 }

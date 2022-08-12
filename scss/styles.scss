@@ -54,6 +54,7 @@ button:hover{
     }
     &__h2{
         text-align: center;
+        color: $Color-principal;
     }  
     &__form--lista{
         font-family: $Font-secundario;
@@ -81,7 +82,7 @@ button:hover{
     &__ol{
         font-size: 150%;
         margin: 10px 5px 10px 5px;
-        color: whitesmoke;
+        color: $Color-secundario;
     }
 }
 .h1__sobrenos{
@@ -126,5 +127,5 @@ button:hover{
     }
 }
 .color__letra--contacto{
-    color: $Color-principal;
+    color: $Color-secundario;
 }

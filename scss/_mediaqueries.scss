@@ -322,7 +322,7 @@ footer{
 .quiensom__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3fr 3fr 2fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
 }
@@ -333,6 +333,7 @@ footer{
 .el_porque{
     grid-column: 1/6;
     grid-row: 2/3;
+    text-align: center;
 }
 .carta1{
     grid-column: 1/3;
@@ -345,6 +346,7 @@ footer{
 .ustedes{
     grid-column: 1/6;
     grid-row: 4/5; 
+    text-align: center;
 }
 .ust__wengue{
     background-image: url(../recursos/IMG-7550.jpg);
@@ -422,18 +424,18 @@ footer{
         grid-row: 6/7; 
     }
 }
-/* proxima modificacion
+
 @media (min-width: 320px) and (max-width: 575px) {
     .quiensom__grid{
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
     .main__presentacion{
-        grid-column: 1/4;
+        grid-column: 1/2;
         grid-row: 1/2;
     }
     .el_porque{
-        grid-column: 1/4;
+        grid-column: 1/2;
         grid-row: 2/3;
     }
     .carta1{
@@ -441,70 +443,42 @@ footer{
         grid-row: 3/4;
     }
     .carta2{
-        grid-column: 3/4;
-        grid-row: 3/4;
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
     .ustedes{
-        grid-column: 1/4;
-        grid-row: 4/5; 
+        grid-column: 1/2;
+        grid-row: 5/6; 
     }
     .ust__wengue{
         grid-column: 1/2;
-        grid-row: 5/6; 
+        grid-row: 6/7; 
     }
     .ust__rack{
-        grid-column: 2/3;
-        grid-row: 5/6; 
+        grid-column: 1/2;
+        grid-row: 7/8; 
     }
     .ust__aux{
-        grid-column: 3/4;
-        grid-row: 5/6; 
+        grid-column: 1/2;
+        grid-row: 8/9; 
     }
     .ust__nordica{
         grid-column: 1/2;
-        grid-row: 6/7; 
+        grid-row: 9/10; 
     }
     .ust__racktv{
-        grid-column: 2/3;
-        grid-row: 6/7; 
+        grid-column: 1/2;
+        grid-row: 10/11; 
+    }
 }
-*/
-
-/* GRID COMPRA 
-.compra__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10fr 2fr 3fr 3fr;
-    width: 100vw;
-    height: 100vh;
-}
-.imagen_compra{
-    background-image: url(../recursos/IMG-6964.JPG);
-    @extend .background__productos;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-.formulario{
-    grid-column: 3/5;
-    grid-row: 1/2; 
-}
-.amoblamientos{
-    grid-column: 1/5;
-    grid-row: 2/3;
-}
-.preguntas{
-    grid-column: 1/5;
-    grid-row: 3/5;
-}
+/* MEDIAQ COMPRA */
 @media (min-width: 576px) and (max-width: 1020px){
-.compra__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
-    width: 100%;
-    height: 100vh;
+    .compra__img{
+        display: none;
+    }
 }
-.imagen_compra{
-    background-image: url(../recursos/IMG-6964.JPG);
+@media (min-width: 320px) and (max-width: 575px){
+    .compra__img{
+        display: none;
+    }
 }
-}*/
