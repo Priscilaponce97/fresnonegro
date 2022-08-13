@@ -1,5 +1,5 @@
 footer {
-  background-image: linear-gradient(to top, grey, black);
+  background-image: linear-gradient(to top, #665c5c, rgba(102, 92, 92, 0.315), whitesmoke);
   padding: 16px 0px 16px 0px;
   height: auto;
   display: flex;
@@ -57,7 +57,7 @@ h5 {
   color: black; }
 
 .header__nav {
-  background-image: linear-gradient(to top, #665c5c, whitesmoke);
+  background-image: linear-gradient(to top, whitesmoke, #665c5c);
   position: sticky;
   top: 0px;
   display: flex;
@@ -498,6 +498,9 @@ h5 {
   width: 100%;
   object-fit: cover;
   height: 70vh !important; }
+
+.img__carrusel--emilio {
+  background-position: top; }
 
 h3 {
   font-family: "Cinzel", serif; }
