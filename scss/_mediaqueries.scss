@@ -471,14 +471,15 @@ footer{
         grid-row: 10/11; 
     }
 }
-/* MEDIAQ COMPRA */
-@media (min-width: 576px) and (max-width: 1020px){
-    .compra__img{
+/* MEDIAQ Contacto */
+@media (min-width: 320px) and (max-width: 575px){
+    .ocultar{
         display: none;
     }
 }
+/* MEDIAQ COMPRA */
 @media (min-width: 320px) and (max-width: 575px){
-    .compra__img{
+    .ocultar{
         display: none;
     }
 }

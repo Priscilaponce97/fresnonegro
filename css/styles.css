@@ -16,9 +16,34 @@ footer {
     font-family: "Cinzel", serif;
     color: black; }
 
+/* Footer grid */
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100vw;
+  height: 100vh; }
+
+.img__whatsapp {
+  background-image: url(../recursos/what.png);
+  grid-column: 2/2;
+  grid-row: 1/2; }
+
 main {
   background-color: whitesmoke;
   height: auto; }
+
+button {
+  width: auto;
+  height: 30px;
+  border: black solid 2px;
+  border-radius: 10%;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  background-image: linear-gradient(to top, #665c5c, whitesmoke); }
+
+button:hover {
+  background-image: linear-gradient(to top, whitesmoke, #665c5c); }
 
 p {
   padding: 0px 16px 0px 16px;
@@ -33,7 +58,8 @@ h1 {
 h2 {
   font-family: "Cinzel", serif;
   background-color: black;
-  text-align: center; }
+  text-align: center;
+  color: whitesmoke; }
 
 .h2__letra--importante {
   background-color: black; }
@@ -81,6 +107,16 @@ h5 {
   display: inline;
   width: 70px;
   height: 70px; }
+
+.header__button {
+  width: auto;
+  height: 30px;
+  border-radius: 10%;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  background-image: linear-gradient(to top, #665c5c, whitesmoke); }
+  .header__button:hover {
+    background-image: linear-gradient(to top, whitesmoke, #665c5c); }
 
 .nav__ul {
   list-style: none; }
@@ -479,13 +515,14 @@ h5 {
     grid-column: 1/2;
     grid-row: 10/11; } }
 
-/* MEDIAQ COMPRA */
-@media (min-width: 576px) and (max-width: 1020px) {
-  .compra__img {
+/* MEDIAQ Contacto */
+@media (min-width: 320px) and (max-width: 575px) {
+  .ocultar {
     display: none; } }
 
+/* MEDIAQ COMPRA */
 @media (min-width: 320px) and (max-width: 575px) {
-  .compra__img {
+  .ocultar {
     display: none; } }
 
 * {
@@ -494,36 +531,20 @@ h5 {
 
 /* INICIO */
 /* Main*/
+.titulo {
+  margin: 10px 0px 10px 0px; }
+
 .img__carrusel {
   width: 100%;
   object-fit: cover;
-  height: 70vh !important; }
+  height: 70vh !important;
+  transition-duration: 3s; }
 
 .img__carrusel--emilio {
   background-position: top; }
 
 h3 {
   font-family: "Cinzel", serif; }
-
-button {
-  width: 100px;
-  height: 30px;
-  border: black solid 2px;
-  border-radius: 10%;
-  font-family: "Cinzel", serif;
-  font-size: 16px;
-  background-image: linear-gradient(to top, white, black); }
-
-button:hover {
-  background-image: linear-gradient(to top, black, white); }
-
-.button__nav {
-  font-family: "Cinzel", serif;
-  color: whitesmoke;
-  background-image: linear-gradient(to top, white, black); }
-
-.button__nav:hover {
-  background-image: linear-gradient(to top, black, white); }
 
 .texto__inicio {
   color: black;
@@ -602,6 +623,9 @@ button:hover {
   width: 400px;
   height: 600px;
   margin: 0px 30px 30px 30px; }
+
+.contacto__boton {
+  margin: 5px; }
 
 .color__letra--contacto {
   color: black; }

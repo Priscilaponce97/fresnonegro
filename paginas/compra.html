@@ -46,7 +46,7 @@
                 </ul>
                 <form class="d-flex" role="Buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="button__nav btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="header__button btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
             </div>
@@ -54,17 +54,14 @@
     </haeder>
     <main>
         <h1> ¿Como Comprar?</h1>
-        <section class="main__compra">
-            <picture class= "compra__img">
-                <source srcset="../recursos/IMG-6964.JPG" type="image/svg+xml">
-                <img src="../recursos/IMG-6964.JPG" class="img-fluid img-thumbnail" alt="...">
-            </picture>
-            <article class="formulario">
-        <div>
-            <h2 class="compra__h2">Pedi tu presupuesto (cliente particular)</h2>
-        </div>
+        <section class="main__compra container-fluid">
+                <img src="../recursos/IMG-6964.JPG" class="img-fluid ocultar" alt="metodo de compra">
+        <article class="formulario col-md-6 col-xs-12">
+            <div>
+                <h2 class="compra__h2">Pedi tu presupuesto (cliente particular)</h2>
+            </div>
             <form method="post" class="form__formularios">
-            <label for="sexo">Sexo</label>
+                <label for="sexo">Sexo</label>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
@@ -83,38 +80,38 @@
                 Prefiero no decirlo
                 </label>
             </div>
-                    <div class= "form-floating mb-3 color__letra--contacto" >
+            <div class= "form-floating mb-3 color__letra--contacto" >
                 <input type="nombreyapellido" class="form-control" id="floatingInput" placeholder="nombre y apellido">
-            <label for="floatingInput">Nombre y Apellido</label>
-        </div>
-        <div class="form-floating color__letra--contacto">
-            <input type="telefono" class="form-control" id="floatingPassword" placeholder="Telefono">
-        <label for="floatingPassword">Telefono</label>
-        </div>
-        <div class="dropdown">
-            <button class=" compra__margin btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Producto
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item active" href="#">Muebles de cocina</a></li>
-            <li><a class="dropdown-item" href="#">Muebles de baño</a></li>
-            <li><a class="dropdown-item" href="#">Muebles de sala/living</a></li>
-            <li><a class="dropdown-item" href="#">Muebles de dormitorio</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Amoblamientos</a></li>
-            </ul>
-        </div>
-            <div class="compra__margin form-floating color__letra--contacto">
+                <label for="floatingInput">Nombre y Apellido</label>
+            </div>
+            <div class="form-floating color__letra--contacto">
                 <input type="telefono" class="form-control" id="floatingPassword" placeholder="Telefono">
-            <label for="floatingPassword">Alto (cm)</label>
+                <label for="floatingPassword">Telefono</label>
+            </div>
+            <div class="dropdown">
+                <button class=" compra__margin btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Producto
+                </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#">Muebles de cocina</a></li>
+                        <li><a class="dropdown-item" href="#">Muebles de baño</a></li>
+                        <li><a class="dropdown-item" href="#">Muebles de sala/living</a></li>
+                        <li><a class="dropdown-item" href="#">Muebles de dormitorio</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Amoblamientos</a></li>
+                    </ul>
             </div>
             <div class="compra__margin form-floating color__letra--contacto">
                 <input type="telefono" class="form-control" id="floatingPassword" placeholder="Telefono">
-            <label for="floatingPassword">Ancho(cm)</label>
+                <label for="floatingPassword">Alto (cm)</label>
             </div>
             <div class="compra__margin form-floating color__letra--contacto">
                 <input type="telefono" class="form-control" id="floatingPassword" placeholder="Telefono">
-            <label for="floatingPassword">Profundidad</label>
+                <label for="floatingPassword">Ancho(cm)</label>
+            </div>
+            <div class="compra__margin form-floating color__letra--contacto">
+                <input type="telefono" class="form-control" id="floatingPassword" placeholder="Telefono">
+                <label for="floatingPassword">Profundidad</label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3" checked>
@@ -137,25 +134,25 @@
             </div>
                 <textarea name="descripcion"></textarea>
             <div>
-                <button type="button" class="btn btn-dark btn-lg ">Enviar</button>
-                <button type="button" class="btn btn-dark btn-lg ">Borrar Todo</button>
+                <button type="submit" class="btn btn-dark btn-lg ">Enviar</button>
+                <button type="reset" class="btn btn-dark btn-lg ">Borrar Todo</button>
             </div>
-    </form>
-    </article>
-</section>
+            </form>
+        </article>
+    </section>
         <div class= "amoblamientos alert alert-warning" role="alert">
         Para amoblamientos, comunicarse por privado  - 351 767-0808
-    </div>
-        <div class=" accordion accordion-flush" id="accordionFlushExample">
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     ¿Cuánto tiempo hay de demora?
                 </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Los factores que afectan la demora son: tiempo de entrega de materiales por parte de nuestro proveedor (Aprox. 7 dias), complejidad del mueble, feriados nacionales. Los carpinteros, dan aviso del tiempo ESTIMADO de demora para a entrega, una vez señado el producto.</div>
-            </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Los factores que afectan la demora son: tiempo de entrega de materiales por parte de nuestro proveedor (Aprox. 7 dias), complejidad del mueble, feriados nacionales. Los carpinteros, dan aviso del tiempo ESTIMADO de demora para a entrega, una vez señado el producto.</div>
+                </div>
             </div>
             <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
@@ -163,9 +160,9 @@
                     ¿Cuáles son los medios de pago?
                 </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">El pago de los materiales (La seña del producto) puede financiarse. Esa información la brinda la pagina del nuestro proveedor (Moconá). El pago de la mano de obra es en: efevtivo/transferencia.</div>
-            </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">El pago de los materiales (La seña del producto) puede financiarse. Esa información la brinda la pagina del nuestro proveedor (Moconá). El pago de la mano de obra es en: efevtivo/transferencia.</div>
+                </div>
             </div>
             <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
@@ -173,19 +170,19 @@
                     ¿Dónde puedo ver los colores?
                 </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Los colores de las madera pueden verse en la pagina del proveedor (Moconá) o bien, presencialmente en sus locales. Tambien pueden verse personalmente con el muestrario del carpitero (Siempre esta mas actualizada la pagina del proveedor).</div>
-            </div>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Los colores de las madera pueden verse en la pagina del proveedor (Moconá) o bien, presencialmente en sus locales. Tambien pueden verse personalmente con el muestrario del carpitero (Siempre esta mas actualizada la pagina del proveedor).</div>
+                </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        ¿Qué vigencia tiene el presupuesto?
-                    </button>
-                </h2>
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    ¿Qué vigencia tiene el presupuesto?
+                </button>
+            </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">La vigencia del presupuesto es de 24hs. ¿Por qué? Por que eta sujeto a cambios del proveedor.</div>
                 </div>
-                </div>
+            </div>
         </div>
     </main>
     <footer>

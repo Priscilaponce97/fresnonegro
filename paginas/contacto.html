@@ -46,7 +46,7 @@
                 </ul>
                 <form class="d-flex" role="Buscar">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="button__nav btn btn-outline-success" type="submit">Buscar</button>
+                <button class="header__button btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
             </div>
@@ -54,10 +54,8 @@
     </haeder>
     <main>
         <h1>Tu consulta es BIENVENIDA</h1>
-    <section class="contacto__main">
-        <article>
-            <img class="contacto__img" src="../recursos/IMG-6965.JPG">
-        </article>
+    <section class="contacto__main container-fluid">
+            <img class="img-fluid contacto__img ocultar" src="../recursos/IMG-6965.JPG">
         <article>
             <form method="post" class="form__formularios">
             <label  class="color__letra--contacto"> Femenino </label>
@@ -86,9 +84,9 @@
             <div>
                 <textarea>Escriba su consulta aqui...</textarea>
             </div>
-            <div>
-                <button type="button" class="btn btn-dark">Enviar</button>
-                <button type="button" class="btn btn-dark">Borrar Todo</button>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Enviar Formulario</button>
+                <button class="btn btn-primary" type="button">Borrar Todo</button>
             </div>
         </form>
         </article>

@@ -2,6 +2,19 @@ main{
     background-color: $Color-principal;
     height: auto;
 }
+button{
+    width: auto;
+    height: 30px;
+    border: black solid 2px;
+    border-radius: 10%;
+    font-family: $Font-principal;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(102, 92, 92), whitesmoke);
+}
+button:hover{
+    background-image: linear-gradient(to top, whitesmoke, rgb(102, 92, 92));
+}
+
 p{
     padding: 0px 16px 0px 16px;
     color: $Color-secundario;
@@ -17,6 +30,7 @@ h2{
     font-family: $Font-principal;
     background-color: $Color-secundario;
     text-align: center;
+    color: $Color-principal;
 }
 .h2__letra--importante {
     background-color: $Color-secundario;
