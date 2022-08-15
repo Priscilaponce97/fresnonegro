@@ -72,30 +72,26 @@ h3{
         color: $Color-secundario;
     }
 }
+.carpinteros__card{
+    &--m{
+        margin: 0px 0px 0px 16px;
+        background-color: $Color-terciario;
+    }
+    &--m{
+        margin: 0px 0px 0px 16px;
+        background-color: $Color-terciario;
+    }
+}
+
+.carpinteros__card--a{
+    margin: 0px 16px 0px 0px;
+    background-color: $Color-terciario;
+}
 .h1__sobrenos{
     font-size: 200%;
 }
 .p__presentacion{
     font-size: 150%;
-}
-
-.info__carpinteros{
-    display: flex;
-    margin: 16px 5px 10px 5px;
-}
-.div__carpinteros{
-    margin: 16px 16px 16px 16px;
-}
-.carpinteros{ 
-    &__img{
-    width: 100vw;
-    height: 100vh;
-    }
-    &__ul{
-    list-style: none;
-    font-size: 100%;
-    color: $Color-principal;
-    }
 }
 .ustedes__img{
     width: 250px;

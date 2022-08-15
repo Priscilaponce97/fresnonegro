@@ -32,15 +32,12 @@ h2{
     text-align: center;
     color: $Color-principal;
 }
-.h2__letra--importante {
-    background-color: $Color-secundario;
-}
 h3{
     color: whitesmoke;
 }
 h5{
     font-family: $Font-principal;
-    color: $Color-principal;
+    color: $Color-secundario;
 }
 .form__lista {
     font-family: $Font-secundario;

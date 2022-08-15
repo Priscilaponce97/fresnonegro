@@ -322,7 +322,7 @@ footer{
 .quiensom__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 2fr;
     width: 100%;
     height: 100%;
 }
@@ -333,7 +333,7 @@ footer{
 .el_porque{
     grid-column: 1/6;
     grid-row: 2/3;
-    text-align: center;
+    margin: 0px 5px 0px 5px;
 }
 .carta1{
     grid-column: 1/3;
@@ -352,31 +352,36 @@ footer{
     background-image: url(../recursos/IMG-7550.jpg);
     @extend .background__productos;
     grid-column: 1/2;
-    grid-row: 5/6; 
+    grid-row: 5/6;
+    column-gap: 2px; 
 }
 .ust__rack{
     background-image: url(../recursos/IMG-7551.jpg);
     @extend .background__productos;
     grid-column: 2/3;
-    grid-row: 5/6; 
+    grid-row: 5/6;
+    column-gap: 2px;  
 }
 .ust__aux{
     background-image: url(../recursos/IMG-7553.jpg);
     @extend .background__productos;
     grid-column: 3/4;
-    grid-row: 5/6; 
+    grid-row: 5/6;
+    column-gap: 2px;  
 }
 .ust__nordica{
     background-image: url(../recursos/IMG-7554.jpg);
     @extend .background__productos;
     grid-column: 4/5;
     grid-row: 5/6; 
+    column-gap: 2px; 
 }
 .ust__racktv{
     background-image: url(../recursos/IMG-7555.jpg);
     @extend .background__productos;
     grid-column: 5/6;
     grid-row: 5/6; 
+    column-gap: 2px; 
 }
 @media (min-width: 576px) and (max-width: 1020px){
     .quiensom__grid{
@@ -394,10 +399,12 @@ footer{
     .carta1{
         grid-column: 1/2;
         grid-row: 3/4;
+        color: $Color-secundario;
     }
     .carta2{
         grid-column: 3/4;
         grid-row: 3/4;
+        color: $Color-secundario;
     }
     .ustedes{
         grid-column: 1/4;
