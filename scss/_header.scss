@@ -30,7 +30,8 @@
         height: 30px;
         border-radius: 10%;
         font-family: $Font-principal;
-        text-align: center;
+        font-size: 15px;
+        vertical-align: middle;
         background-image: linear-gradient(to top, rgb(102, 92, 92), whitesmoke);
         &:hover{
             background-image: linear-gradient(to top, whitesmoke, rgb(102, 92, 92));
