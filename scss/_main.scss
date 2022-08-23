@@ -15,7 +15,8 @@ button:hover{
     background-image: linear-gradient(to top, whitesmoke, rgb(102, 92, 92));
 }
 .botones{
-    font-family: $Font-principal-negrita;
+    font-family: $Font-principal;
+    font-weight: 600;
     font-size: medium;
     color: $Color-secundario;
     font-size: 15px;
