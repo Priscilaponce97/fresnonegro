@@ -5,117 +5,151 @@
 @import "operators";
 @import "mediaqueries";
 
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
 /* INICIO */
 /* Main*/
-.titulo{
+.titulo {
     margin: 10px 0px 10px 0px;
 }
+
 .img__carrusel {
     width: 100%;
     object-fit: cover;
     height: 70vh !important;
     transition-duration: $carousel-transition-duration;
 }
-.img__carrusel--emilio{
+
+.img__carrusel--emilio {
     background-position: top;
 }
-h3{
+
+h3 {
     font-family: $Font-principal;
 }
-.texto__inicio{
+
+.texto__inicio {
     color: $Color-secundario;
     justify-content: center;
 }
+
 /* PRODUCTOS */
+.posicion{
+    position: static;
+}
 /* Main Compra */
-.main__compra{
+.main__compra {
     display: flex;
 }
-.compra{
-    &__img{
+
+.compra {
+    &__img {
         padding: 10px 10px 10px 10px;
     }
-    &__h2{
+
+    &__h2 {
         text-align: center;
         color: $Color-principal;
-    }  
-    &__form--lista{
+    }
+
+    &__form--lista {
         font-family: $Font-secundario;
         font-size: 100%;
     }
 }
-.compra__margin{
+
+.compra__margin {
     margin: 10px 0px 10px 0px;
 }
-.formuario{
-    display:block
+
+.formuario {
+    display: block
 }
-.amoblamientos{
+
+.amoblamientos {
     margin: 10px 0px 10px 0px;
     text-align: center;
 }
-.preguntasfrec{
+
+.preguntasfrec {
     font-weight: 600;
 }
 
 /* Main Sobre Nosotros */
-.main{
-    &__sobrenos{
+.main {
+    &__sobrenos {
         display: flex;
     }
-    &__presentacion{
+
+    &__presentacion {
         margin: 16px 10px 16px 10px;
     }
-    &__ol{
+
+    &__ol {
         font-size: 150%;
         margin: 10px 5px 10px 5px;
         color: $Color-secundario;
     }
 }
-.carpinteros__card{
-    &--m{
+
+.carpinteros__card {
+    &--m {
         margin: 0px 0px 0px 16px;
         background-color: $Color-terciario;
     }
-    &--m{
-        margin: 0px 0px 0px 16px;
+
+    &--a {
+        margin: 0px 16px 0px 0px;
         background-color: $Color-terciario;
     }
 }
 
-.carpinteros__card--a{
-    margin: 0px 16px 0px 0px;
-    background-color: $Color-terciario;
-}
-.h1__sobrenos{
+/* .img__carpi{
+    background-size: cover;
+} */
+
+.h1__sobrenos {
     font-size: 200%;
 }
-.p__presentacion{
+
+.p__presentacion {
     font-size: 150%;
 }
-.ustedes__img{
+
+.ustedes__img {
     width: 250px;
     height: 300px;
 }
+
 /* Main Contacto */
-.contacto{
-    &__main{
+.contacto {
+    &__main {
         display: flex;
         justify-content: center;
     }
-    &__img{
+
+    &__img {
         width: 400px;
         height: 600px;
         margin: 0px 30px 30px 30px;
     }
-    &__boton{
+
+    &__boton {
         margin: 5px;
     }
 }
-.color__letra--contacto{
+
+.color__letra--contacto {
     color: $Color-secundario;
 }

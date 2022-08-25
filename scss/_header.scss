@@ -1,31 +1,38 @@
-.header{
+.header {
+    position: sticky;
+    top: 0px;
+
     &__nav {
         background-image: linear-gradient(to top, whitesmoke, rgb(102, 92, 92));
         position: sticky;
         top: 0px;
         display: flex;
         justify-content: space-between;
-        align-items:center; 
+        align-items: center;
         flex-wrap: wrap;
         padding: 0px 30px 0px 0px;
-        z-index:1000;
+        z-index: 1000;
     }
+
     &__li {
         display: inline;
         font-family: $Font-principal;
     }
+
     &__li a {
         color: $Color-secundario;
         text-decoration: solid;
     }
+
     &__logo {
-        position:sticky;
+        position: sticky;
         left: 0px;
         display: inline;
         width: 70px;
         height: 70px;
     }
-    &__button{
+
+    &__button {
         width: auto;
         height: 30px;
         border-radius: 10%;
@@ -33,11 +40,13 @@
         font-size: 15px;
         vertical-align: middle;
         background-image: linear-gradient(to top, rgb(102, 92, 92), whitesmoke);
-        &:hover{
+
+        &:hover {
             background-image: linear-gradient(to top, whitesmoke, rgb(102, 92, 92));
         }
-    } 
+    }
 }
+
 .nav__ul {
     list-style: none;
 }
