@@ -67,10 +67,9 @@ h3 {
         font-family: $Font-secundario;
         font-size: 100%;
     }
-}
-
-.compra__margin {
-    margin: 10px 0px 10px 0px;
+    &__margin{
+        margin: 10px 0px 10px 0px;
+    }
 }
 
 .formuario {
@@ -85,6 +84,7 @@ h3 {
 .preguntasfrec {
     font-weight: 600;
 }
+
 
 /* Main Sobre Nosotros */
 .main {
@@ -115,9 +115,6 @@ h3 {
     }
 }
 
-/* .img__carpi{
-    background-size: cover;
-} */
 
 .h1__sobrenos {
     font-size: 200%;

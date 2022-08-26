@@ -201,41 +201,42 @@ h5 {
   margin: 30px;
   color: black; }
 
-.header {
+.header__nav {
+  background-image: linear-gradient(to top, whitesmoke, #665c5c);
   position: sticky;
-  top: 0px; }
-  .header__nav {
-    background-image: linear-gradient(to top, whitesmoke, #665c5c);
-    position: sticky;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 30px 0px 0px;
-    z-index: 1000; }
-  .header__li {
-    display: inline;
-    font-family: "Cinzel", serif; }
-  .header__li a {
-    color: black;
-    text-decoration: solid; }
-  .header__logo {
-    position: sticky;
-    left: 0px;
-    display: inline;
-    width: 70px;
-    height: 70px; }
-  .header__button {
-    width: auto;
-    height: 30px;
-    border-radius: 10%;
-    font-family: "Cinzel", serif;
-    font-size: 15px;
-    vertical-align: middle;
-    background-image: linear-gradient(to top, #665c5c, whitesmoke); }
-    .header__button:hover {
-      background-image: linear-gradient(to top, whitesmoke, #665c5c); }
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 30px 0px 0px;
+  z-index: 1000; }
+
+.header__li {
+  display: inline;
+  font-family: "Cinzel", serif; }
+
+.header__li a {
+  color: black;
+  text-decoration: solid; }
+
+.header__logo {
+  position: sticky;
+  left: 0px;
+  display: inline;
+  width: 70px;
+  height: 70px; }
+
+.header__button {
+  width: auto;
+  height: 30px;
+  border-radius: 10%;
+  font-family: "Cinzel", serif;
+  font-size: 15px;
+  vertical-align: middle;
+  background-image: linear-gradient(to top, #665c5c, whitesmoke); }
+  .header__button:hover {
+    background-image: linear-gradient(to top, whitesmoke, #665c5c); }
 
 .nav__ul {
   list-style: none; }
@@ -676,7 +677,9 @@ h5 {
 /* MEDIAQ COMPRA */
 @media (min-width: 320px) and (max-width: 575px) {
   .ocultar {
-    display: none; } }
+    display: none; }
+  .preguntasfrec {
+    height: 70px; } }
 
 @media (min-width: 576px) and (max-width: 1020px) {
   .ocultar {
@@ -768,9 +771,6 @@ h3 {
   margin: 0px 16px 0px 0px;
   background-color: #bed2db; }
 
-/* .img__carpi{
-    background-size: cover;
-} */
 .h1__sobrenos {
   font-size: 200%; }
 
