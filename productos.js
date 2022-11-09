@@ -60,3 +60,54 @@ console.log(carrito);
 totalCompra = carrito.map(producto => producto.precio).reduce((a, b) => a + b)
 console.log(totalCompra);
 alert(`El total de su compra es de $${totalCompra}`)
+
+
+/* INFORMACION DE LOS PRODUCTOS */
+
+class RackTV{
+    constructor (nombre, tipo, madera, color1, color2){
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.madera = madera;
+        this.color1 = color1;
+        this.color2 = color2;
+    }
+}
+const Rack1 = new RackTV ("KARIA","flotante","melamina","blanco","null");
+const Rack2 = new RackTV ("FRIDA","de piso","melamina","negro", "hickory");
+const Rack3 = new RackTV ("ANNIKA", "flotante", "melamina", "negro texturado","Gris bruma");
+const Rack4 = new RackTV ("ANUBIS", "de piso", "melamina", "roble negro", "null");
+
+class Bibliotecas{
+    constructor (nombre, tipo, madera1, madera2, color1, color2){
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.madera = madera1;
+        this.madera = madera2;
+        this.color1 = color1;
+        this.color1 = color2;
+    }
+}
+
+const Nordica1 = new Bibliotecas ("ALANA","nordica","melamina","pino cepillado","blanco", "null");
+const Nordica2= new Bibliotecas ("ASTRID","nordica","melamina","pino cepillado", "blanco", "null");
+const Nordica3 = new Bibliotecas ("BERDA", "escandinava", "melamina","melamina","blanco", "hickory");
+const Nordica4 = new Bibliotecas ("GERDA", "escandinava", "melamina", "melamina", "blanco", "roble denver marron trufa");
+
+class MesitasNoche{
+    constructor (nombre, tipo, madera1, madera2, color1, color2, cajon, estante){
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.madera = madera1;
+        this.madera = madera2;
+        this.color1 = color1;
+        this.color1 = color2;
+        this.cajon = cajon;
+        this.estante = estante;
+    }
+}
+
+const NocheNordica1 = new MesitasNoche ("FREYDIS","nordica","melamina","melamina","blanco", "hickory", "Si", "Si" );
+const NocheNordica2 = new MesitasNoche ("FILIPA","nordica","melamina","pino cepillado", "blanco", "null", "No", "Si");
+const NocheSimple = new MesitasNoche ("LENA","basica","melamina", "null", "blanco", "null","Si", "No");
+const NocheFlot = new MesitasNoche ("CALA","nordica flotante","melamina", "melamina", "blanco", "hickory","Si", "Si");
