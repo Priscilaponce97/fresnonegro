@@ -9,10 +9,11 @@ function inicio (){
     let bienvenida = prompt(`¿Es tu primera vez en Fresno Negro? Ingrese Si o No`);
     if (bienvenida.toUpperCase() === "SI"){
         const bienvenidaUsuario = document.getElementById ("tituloBienvenida")
-        bienvenidaUsuario.innerText=`Bienvenido ${usuario} a Fresno Negro`
+        bienvenidaUsuario.innerText=`Bienvenido/a ${usuario} a Fresno Negro`
         const parrafoBienvenida = document.createElement("p")
         parrafoBienvenida.innerText = `${usuario} en tu primera compra obtendras un descuento!`
-        parrafoBienvenida.setAttribute("id","parrafoJS")
+        p.appendChild(parrafoBienvenida)
+        document.body.appendChild
     }else {
         const bienvenidaUsuario = document.getElementById ("tituloBienvenida")
         bienvenidaUsuario.innerText=`Bienvenido ${usuario} a Fresno Negro`
