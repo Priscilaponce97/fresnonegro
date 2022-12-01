@@ -111,3 +111,4 @@ const NocheNordica1 = new MesitasNoche ("FREYDIS","nordica","melamina","melamina
 const NocheNordica2 = new MesitasNoche ("FILIPA","nordica","melamina","pino cepillado", "blanco", "null", "No", "Si");
 const NocheSimple = new MesitasNoche ("LENA","basica","melamina", "null", "blanco", "null","Si", "No");
 const NocheFlot = new MesitasNoche ("CALA","nordica flotante","melamina", "melamina", "blanco", "hickory","Si", "Si");
+

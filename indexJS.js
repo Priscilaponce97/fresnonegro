@@ -8,9 +8,14 @@ function inicio (){
     }
     let bienvenida = prompt(`¿Es tu primera vez en Fresno Negro? Ingrese Si o No`);
     if (bienvenida.toUpperCase() === "SI"){
-        alert(`Bienvenido/a ${usuario}, es un placer tenerte con nosotros! Obtendras un descuento en tu primera compra`);
+        const bienvenidaUsuario = document.getElementById ("tituloBienvenida")
+        bienvenidaUsuario.innerText=`Bienvenido ${usuario} a Fresno Negro`
+        const parrafoBienvenida = document.createElement("p")
+        parrafoBienvenida.innerText = `${usuario} en tu primera compra obtendras un descuento!`
+        parrafoBienvenida.setAttribute("id","parrafoJS")
     }else {
-        alert(`Bienvenido/a nuevamente ${usuario}, nos alegra verte otra vez!`);
+        const bienvenidaUsuario = document.getElementById ("tituloBienvenida")
+        bienvenidaUsuario.innerText=`Bienvenido ${usuario} a Fresno Negro`
     }
 }
 inicio()

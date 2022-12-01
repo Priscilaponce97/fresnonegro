@@ -9,10 +9,9 @@ e.preventDefault()
         nombre: inputNombre.value,
         contacto: inputTelefono.value
     }
-    titulo.innerText = `PEDI U PRESUPUESTO ${inputNombre.value}`
+    titulo.textContent = `PEDI TU PRESUPUESTO ${inputNombre.value}`
     inputNombre.value = ""
     inputTelefono.value = ""
 localStorage.setItem("infoUsuario",JSON.stringify(usuarioCompra))
-
 }
 
