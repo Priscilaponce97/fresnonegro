@@ -62,7 +62,8 @@ console.log(totalCompra);
 alert(`El total de su compra es de $${totalCompra}`)
 
 
-/* INFORMACION DE LOS PRODUCTOS */
+/*Se aplican OBJETOS para agrupar la informacion de cada producto. Decidí no aplicar Operadores avanzados
+ya que el codigo se me haría mucho mas extendido.*/
 
 class RackTV{
     constructor (nombre, tipo, madera, color1, color2){
