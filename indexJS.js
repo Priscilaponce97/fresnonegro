@@ -2,7 +2,12 @@ function inicio (){
     let usuario = prompt(`¡Bienvenido a Fesno Negro! Ingrese su Nombre`);
     let edad = prompt(`¿Cuál es tu edad ${usuario}? Ingresa un número:`);
     while (edad < 18){
-        alert(`Lo sentimos mucho, debes ser mayor de edad poder poder ingresar.`);
+        Swal.fire({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+        });
         usuario = prompt(`¡Bienvenido a Fesno Negro ${usuario}! Ingrese su Nombre: `);
         edad = prompt(`¿Cuál es tu edad ${usuario}? Ingresa un número:`);
     }
