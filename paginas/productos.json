@@ -1,0 +1,108 @@
+[
+    {
+        "id":4,
+        "tipoMueble": "Bibioteca",
+        "nombreProducto": "Alana",
+        "precio": 34500,
+        "demora": 6,
+        "imagen": "../recursos/nordicauno.jpg"
+    },
+
+    {
+        "id":5,
+        "tipoMueble": "Bibioteca",
+        "nombreProducto": "Astrid",
+        "precio": 40793,
+        "demora": 9,
+        "imagen": "../recursos/nordicauno.jpg" 
+    },
+    {
+        "id":6,
+        "tipoMueble": "Bibioteca",
+        "nombreProducto": "Berda",
+        "precio": 53100,
+        "demora": 7,
+        "imagen": "../recursos/nordicauno.jpg"
+    },
+
+    {
+        "id":7,
+        "tipoMueble": "Bibioteca",
+        "nombreProducto": "Gerda",
+        "precio": 45800,
+        "demora": 11,
+        "imagen": "../recursos/nordicauno.jpg"
+    },
+
+    {
+        "id":8,
+        "tipoMueble": "RackTV",
+        "nombreProducto": "karia",
+        "precio": 65000,
+        "demora": 10,
+        "imagen": "../recursos/rackdos.jpg"
+    },
+
+    {
+        "id":9,
+        "tipoMueble": "RackTV",
+        "nombreProducto": "Frida",
+        "precio": 70563,
+        "demora": 12,
+        "imagen": "../recursos/rackdos.jpg"
+    },
+
+    {
+        "id":10,
+        "tipoMueble": "RackTV",
+        "nombreProducto": "annika",
+        "precio": 58218,
+        "demora": 10,
+        "imagen": "../recursos/rackdos.jpg"  
+    },
+
+    {
+        "id":11,
+        "tipoMueble": "RackTV",
+        "nombreProducto": "anubis",
+        "precio": 65300,
+        "demora": 15,
+        "imagen": "../recursos/rackdos.jpg"  
+    },
+
+    {
+        "id":12,
+        "tipoMueble": "MesaNoche",
+        "nombreProducto": "Freydis",
+        "precio": 20400,
+        "demora": 3,
+        "imagen": "../recursos/auxiliar.jpg"
+    },
+
+    {
+        "id":13,
+        "tipoMueble": "MesaNoche",
+        "nombreProducto": "Filipa",
+        "precio": 24700,
+        "demora": 5,
+        "imagen": "../recursos/auxiliar.jpg"  
+    },
+
+    {
+        "id":14,
+        "tipoMueble": "MesaNoche",
+        "nombreProducto": "Lena",
+        "precio": 20763,
+        "demora": 7,
+        "imagen": "../recursos/auxiliar.jpg"  
+    },
+
+    {
+        "id":15,
+        "tipoMueble": "MesaNoche",
+        "nombreProducto": "cala",
+        "precio": 30650,
+        "demora": 4,
+        "imagen": "../recursos/auxiliar.jpg"  
+    }
+]

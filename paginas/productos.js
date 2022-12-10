@@ -1,4 +1,86 @@
-const productosArray = [];
+const divCard = document.querySelector(".cards");
+const lista = document.querySelector("#lista");
+const filtro = document.querySelector ("#filtrar");
+
+const mostrarCategorias = async() => {
+    const categoriasFetch = await fetch ("tipoMuebleCate.json");
+    const categoriasJson = await categoriasFetch.json ();
+    console.log(categoriasJson) 
+    categoriasJson.forEach((cate) => {
+        const option = document.createElement("option")
+        option.innerText = `${cate}`
+        lista.append(option)
+    })
+}
+mostrarCategorias()
+
+const categorias= async () => {
+    const categoriasFetch = await fetch ("tipoMuebleCate.json")
+    const categoriasJson = await categoriasFetch.json ()
+    categoriasJson.forEach((cate) => {
+        const option = document.createElement("option")
+        botonProductos.innerText = `${cate}`
+        lista.append(option)
+    })
+}
+const buscarPorCat = async () => {
+    divCard.innerHTML = ""
+    const categoriaElegida = lista.value
+    const productosFetch = await fetch (productos.json)
+    const productosJson = await productosFetch.json()
+    const productosFiltrados = productosJson.filter (prod=>prod.tipoMueble===categoriaElegida)
+    productosFiltrados.forEach((prod) =>{
+        const {id, tipoMueble, nombreProducto, precio, demora} = prod
+        divCard.innerHTML += `
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    `
+    })
+}
+
+const buscarProductos = async () => {
+    const productosFetch = await fetch("productos.json")
+    const productosJson = await productosFetch.json ()
+    console.log(productosJson);
+    productosJson.forEach(prod=>{
+        const {id,tipoMueble,nombreProducto,precio,demora,imagen} = prod;
+        divCard.innerHTML += `
+        <div class="card" style="width: 18rem;">
+        <img src=${imagen} class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">${tipoMueble}</h5>
+        <p class="card-text"> ${nombreProducto} </p>
+        <p>${precio}</p>
+        <p>Demora aproximada para la entrega: ${demora} días. </p>
+        <button id=${id} class="btn btn-primary"> AGREGAR </button>
+        </div>
+    </div>
+    `
+    });
+}
+
+buscarProductos ()
+
+
+
+
+
+/* const botonfiltro = document.getElementById ("botonProductos")
+
+botonfiltro.onclick = () => {
+    fetch ("productos.json")
+    .then (Response => Response.json ())
+    .then (Response=>console.log(Response.results))
+    .catch (error => console.log(error))
+}  */
+
+/* const productosArray = [];
 
 class NewProduct{
     constructor (id,tipoMueble,nombreProducto,precio,demora){
@@ -36,6 +118,7 @@ productosArray.push (Lena);
 const Cala = new NewProduct (15,"MesaNoche","Cala", 30650, 4);
 productosArray.push (Cala);
 
+
 let seguirComprando = true
 const carrito = []
 while (seguirComprando === true){
@@ -59,13 +142,13 @@ console.log(carrito);
 
 totalCompra = carrito.map(producto => producto.precio).reduce((a, b) => a + b)
 console.log(totalCompra);
-alert(`El total de su compra es de $${totalCompra}`)
+alert(`El total de su compra es de $${totalCompra}`) */
 
 
 /*Se aplican OBJETOS para agrupar la informacion de cada producto. Decidí no aplicar Operadores avanzados
 ya que el codigo se me haría mucho mas extendido.*/
 
-class RackTV{
+/* class RackTV{
     constructor (nombre, tipo, madera, color1, color2){
         this.nombre = nombre;
         this.tipo = tipo;
@@ -111,5 +194,5 @@ class MesitasNoche{
 const NocheNordica1 = new MesitasNoche ("FREYDIS","nordica","melamina","melamina","blanco", "hickory", "Si", "Si" );
 const NocheNordica2 = new MesitasNoche ("FILIPA","nordica","melamina","pino cepillado", "blanco", "null", "No", "Si");
 const NocheSimple = new MesitasNoche ("LENA","basica","melamina", "null", "blanco", "null","Si", "No");
-const NocheFlot = new MesitasNoche ("CALA","nordica flotante","melamina", "melamina", "blanco", "hickory","Si", "Si");
+const NocheFlot = new MesitasNoche ("CALA","nordica flotante","melamina", "melamina", "blanco", "hickory","Si", "Si");  */
 
