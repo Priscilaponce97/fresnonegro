@@ -1,21 +1,37 @@
-const { value: formValues } = await Swal.fire({
-  title: 'Multiple inputs',
-  html:
-    '<input id="swal-input1" class="swal2-input">' +
-    '<input id="swal-input2" class="swal2-input">',
-  focusConfirm: false,
-  preConfirm: () => {
-    return [
-      document.getElementById('swal-input1').value,
-      document.getElementById('swal-input2').value
-    ]
-  }
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger',
+  },
+  buttonsStyling: false
 })
 
-if (formValues) {
-  Swal.fire(JSON.stringify(formValues))
-}
+swalWithBootstrapButtons.fire({
+  title: '¿Eres mayor de edad?',
+  color: "grey",
+  background: "black",
+  text: "Recuerda que para comprar es necesario ser +18",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonText: "Entendido", 
+  cancelButtonText: 'No, ver el catalogo',
+  reverseButtons: true
+})
+
+const botonBien = document.getElementById ("botonBienve")
+
+botonBien.onclick = async () => {
+  const { value: email } = await Swal.fire({
+    title: '¡Registrate con tu E-mail!',
+    input: 'email',
+    inputLabel: 'Recuerda revisar bien antes de aceptar. ¡Recibiras ofertas increibles!',
+    inputPlaceholder: 'E-mail'
+  })
   
+  if (email) {
+    Swal.fire(`Se registró: ${email}`)
+  }
+}
 /*     let edad = prompt(`¿Cuál es tu edad ${usuario}? Ingresa un número:`);
     while (edad < 18){
         Swal.fire({

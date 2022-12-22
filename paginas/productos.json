@@ -76,7 +76,7 @@
         "nombreProducto": "Freydis",
         "precio": 20400,
         "demora": 3,
-        "imagen": "../recursos/auxiliar.jpg"
+        "imagen": "../recursos/mesanoche.jpg" 
     },
 
     {
@@ -85,7 +85,7 @@
         "nombreProducto": "Filipa",
         "precio": 24700,
         "demora": 5,
-        "imagen": "../recursos/auxiliar.jpg"  
+        "imagen": "../recursos/mesanoche.jpg"  
     },
 
     {
@@ -94,7 +94,7 @@
         "nombreProducto": "Lena",
         "precio": 20763,
         "demora": 7,
-        "imagen": "../recursos/auxiliar.jpg"  
+        "imagen": "../recursos/mesanoche.jpg" 
     },
 
     {
@@ -103,6 +103,6 @@
         "nombreProducto": "cala",
         "precio": 30650,
         "demora": 4,
-        "imagen": "../recursos/auxiliar.jpg"  
+        "imagen": "../recursos/mesanoche.jpg"  
     }
 ]

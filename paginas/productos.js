@@ -1,7 +1,20 @@
-const divCard = document.querySelector(".cards");
-const lista = document.querySelector("#lista");
-const filtro = document.querySelector ("#filtrar");
+const divCard = document.getElementById("cards");
+const lista = document.getElementById("lista");
+const filtro = document.getElementById ("filtrar");
 
+/* Defino las categorias de los productos */
+const categorias= async () => {
+    const categoriasFetch = await fetch ("tipoMuebleCate.json")
+    const categoriasJson = await categoriasFetch.json ()
+    categoriasJson.forEach((cate) => {
+        const option = document.createElement("option")
+        botonProductos.innerText = `${cate}`
+        lista.append(option)
+    })
+}
+
+
+/* Se muestran las categorias en una lista en el body */
 const mostrarCategorias = async() => {
     const categoriasFetch = await fetch ("tipoMuebleCate.json");
     const categoriasJson = await categoriasFetch.json ();
@@ -14,35 +27,7 @@ const mostrarCategorias = async() => {
 }
 mostrarCategorias()
 
-const categorias= async () => {
-    const categoriasFetch = await fetch ("tipoMuebleCate.json")
-    const categoriasJson = await categoriasFetch.json ()
-    categoriasJson.forEach((cate) => {
-        const option = document.createElement("option")
-        botonProductos.innerText = `${cate}`
-        lista.append(option)
-    })
-}
-const buscarPorCat = async () => {
-    divCard.innerHTML = ""
-    const categoriaElegida = lista.value
-    const productosFetch = await fetch (productos.json)
-    const productosJson = await productosFetch.json()
-    const productosFiltrados = productosJson.filter (prod=>prod.tipoMueble===categoriaElegida)
-    productosFiltrados.forEach((prod) =>{
-        const {id, tipoMueble, nombreProducto, precio, demora} = prod
-        divCard.innerHTML += `
-        <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    `
-    })
-}
+/* Se buscan los productos exibidos */
 
 const buscarProductos = async () => {
     const productosFetch = await fetch("productos.json")
@@ -63,22 +48,38 @@ const buscarProductos = async () => {
     </div>
     `
     });
+} 
+
+/* Se filtan los productos por categorias */
+
+const buscarPorCat = async () => {
+    divCard.innerHTML = ""
+    const categoriaElegida = lista.value
+    const productosFetch = await fetch ("productos.json")
+    const productosJson = await productosFetch.json()
+    const productosFiltrados = productosJson.filter (prod=>prod.tipoMueble===categoriaElegida)
+    productosFiltrados.forEach((prod) =>{
+        const {id,tipoMueble,nombreProducto,precio,demora,imagen} = prod;
+        divCard.innerHTML += `
+        <div class="card" style="width: 18rem;">
+        <img src=${imagen} class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">${tipoMueble}</h5>
+        <p class="card-text"> ${nombreProducto} </p>
+        <p>${precio}</p>
+        <p>Demora aproximada para la entrega: ${demora} días. </p>
+        <button " id=${id} class="btn btn-primary"> AGREGAR </button>
+        </div>
+    </div>
+    `
+    });
 }
 
 buscarProductos ()
+buscarPorCat ()
 
-
-
-
-
-/* const botonfiltro = document.getElementById ("botonProductos")
-
-botonfiltro.onclick = () => {
-    fetch ("productos.json")
-    .then (Response => Response.json ())
-    .then (Response=>console.log(Response.results))
-    .catch (error => console.log(error))
-}  */
+/* Hace funcionar el boton de filtro */
+filtro.onclick = buscarPorCat
 
 /* const productosArray = [];
 
